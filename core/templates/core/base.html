@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,7 +11,19 @@
     </head>
 
     <body>
-        <div class="px-6 py-6">
+        <nav class="py-8 px-8 flex justify-between items-center border-b border-green-200">
+            <a href="/" class="text-xl font-semi-bold">commute</a>
+
+            <div class="space-x-4">
+               <a href="#" class="text-lg hover:text-gray-500">new listing</a>
+               <a href="#" class="text-lg hover:text-gray-500">search</a>
+
+
+               <a href="#" class="px-6 py-2 text-lg font-semibold bg-green-500 text-white rounded-xl hover:bg-green-750">sign up</a>
+               <a href="#" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-750">log in</a>
+            </div>
+        </nav>
+        <div class="px-8 py-8">
             {%  block content %}
             {%  endblock %}
         </div>
